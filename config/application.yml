@@ -9,5 +9,5 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-EDAMAM_ID: 38130955
+EDAMAM_ID: "38130955"
 EDAMAM_KEY: a8c89739c1b13aeb5e3b90610875b0b1
