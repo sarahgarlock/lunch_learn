@@ -1,0 +1,221 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?city=Nigeria
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '29'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 15:54:15 GMT
+      X-Amzn-Requestid:
+      - a9acbc7f-4a56-4b5c-b2ee-2276709a5fa5
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JTACOGdTvHcFTjg=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d113a7-7b62926b5d71b94a289b45b3;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 f351054a0917e7cc21ba99141c9ae602.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - oo68816MrzPPGN5x14G7XhWRioaqtxvZsHP4KiwQQbt6xhdg4KL6Lg==
+    body:
+      encoding: UTF-8
+      string: '{"error": "Missing API Key."}'
+  recorded_at: Mon, 07 Aug 2023 15:54:15 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?X-Api-Key=3m2WMIPaZwe69ESj0McjQQ==iCPBWjZU7As1voZ4&city=Nigeria
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '29'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 16:00:05 GMT
+      X-Amzn-Requestid:
+      - b0124e3e-97ff-46e7-951a-dfe475eefd62
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JTA45EzYPHcF1dQ=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d11505-1f05a6a36be8067b52712a58;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 47bd30b1233fcd4bea962db4946b0ff2.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - I0qCXnRo7S8UeL-tKZWjyssJoj4tHQ-4yFz9xFhyOF_ZF_irIOJXRQ==
+    body:
+      encoding: UTF-8
+      string: '{"error": "Missing API Key."}'
+  recorded_at: Mon, 07 Aug 2023 16:00:05 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?city=Denver
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - 3m2WMIPaZwe69ESj0McjQQ==iCPBWjZU7As1voZ4
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '284'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 16:09:57 GMT
+      X-Amzn-Requestid:
+      - e3fb4526-d0be-499b-b21c-f743fe19722f
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JTCVTG8iPHcFWJg=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d11754-50b2ac8870b4bfeb7f9c2a60;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 1c24aee52487b0940693b93c42adc29c.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - JFObV9UNHihOmSUNeSGlD3qcng3VRjciWYuGbYgNxYeBlW4I7_hVCQ==
+    body:
+      encoding: UTF-8
+      string: '{"CO": {"concentration": 277.04, "aqi": 3}, "NO2": {"concentration":
+        12.34, "aqi": 15}, "O3": {"concentration": 94.41, "aqi": 148}, "SO2": {"concentration":
+        7.15, "aqi": 10}, "PM2.5": {"concentration": 9.38, "aqi": 30}, "PM10": {"concentration":
+        11.07, "aqi": 10}, "overall_aqi": 148}'
+  recorded_at: Mon, 07 Aug 2023 16:09:57 GMT
+- request:
+    method: get
+    uri: https://api.api-ninjas.com/v1/airquality?city=paris
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Api-Key:
+      - 3m2WMIPaZwe69ESj0McjQQ==iCPBWjZU7As1voZ4
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '274'
+      Connection:
+      - keep-alive
+      Date:
+      - Mon, 07 Aug 2023 16:11:21 GMT
+      X-Amzn-Requestid:
+      - ef45a1c8-4fef-49ab-bf4f-4ccffebfc5e4
+      Access-Control-Allow-Origin:
+      - "*"
+      Allow:
+      - GET, OPTIONS, POST
+      Access-Control-Allow-Headers:
+      - "*"
+      X-Amz-Apigw-Id:
+      - JTCiWGS5PHcFWmA=
+      Access-Control-Allow-Methods:
+      - GET, OPTIONS, POST
+      X-Amzn-Trace-Id:
+      - Root=1-64d117a8-2cf5b9dc2232d0940d8873d4;Sampled=0;lineage=d5ca6d75:0
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 b8620ad7aedba28451ef92dbe52bd094.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-P1
+      X-Amz-Cf-Id:
+      - nGgmeAaj1njueGGLeCbxvxoJiIUSfBDHZL6phajii3gRnl63VIEudw==
+    body:
+      encoding: UTF-8
+      string: '{"CO": {"concentration": 220.3, "aqi": 2}, "NO2": {"concentration":
+        3.77, "aqi": 4}, "O3": {"concentration": 70.1, "aqi": 84}, "SO2": {"concentration":
+        2.47, "aqi": 3}, "PM2.5": {"concentration": 2.74, "aqi": 8}, "PM10": {"concentration":
+        3.69, "aqi": 3}, "overall_aqi": 84}'
+  recorded_at: Mon, 07 Aug 2023 16:11:21 GMT
+recorded_with: VCR 6.2.0
