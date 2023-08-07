@@ -9,9 +9,8 @@ RSpec.describe Recipe do
           :image => "https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg",
         }
       }
-
       recipe = Recipe.new(data, "Italy")
-
+      
       expect(recipe).to be_a(Recipe)
       expect(recipe.id).to eq(nil)
       expect(recipe.country).to eq("Italy")
