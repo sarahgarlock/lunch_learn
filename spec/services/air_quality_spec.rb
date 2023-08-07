@@ -28,6 +28,5 @@ RSpec.describe AirQualityService do
 
     expect(aq).to have_key(:overall_aqi)
     expect(aq[:overall_aqi]).to be_a(Integer) 
-    binding.pry
   end
 end

@@ -1,7 +1,7 @@
 class AirQualityFacade
-  def get_air_quality(country)
-    request = service.get_air_quality(country)
-    AirQuality.new(request)
+  def get_air_quality(city)
+    request = service.get_aq(city)
+    AirQuality.new(request, city)
   end
 
   def service
