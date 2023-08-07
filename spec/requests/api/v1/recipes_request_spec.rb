@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe "Recipes API", type: :request do
   describe "happy paths" do
-    xit "returns a list of recipes for a specific country", :vcr do
+    it "returns a list of recipes for a specific country", :vcr do
       get '/api/v1/recipes?country=italy'
 
       expect(response).to be_successful
@@ -42,7 +42,7 @@ RSpec.describe "Recipes API", type: :request do
       expect(recipe[:data].first[:attributes]).to_not have_key(:dishType)
     end
 
-    xit "returns a list of recipes for a randomly selected country", :vcr do
+    it "returns a list of recipes for a randomly selected country", :vcr do
       get '/api/v1/recipes'
       expect(response).to be_successful
       
