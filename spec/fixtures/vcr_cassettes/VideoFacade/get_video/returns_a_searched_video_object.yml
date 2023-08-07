@@ -1,0 +1,223 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://youtube.googleapis.com/youtube/v3/search?key=AIzaSyAyCameGbE6cUNSRfKBfguWo1z6KudUZo4&part=snippet&q=India
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Vary:
+      - Origin
+      - Referer
+      - X-Origin
+      Date:
+      - Mon, 07 Aug 2023 21:48:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Cache-Control:
+      - private
+      X-Xss-Protection:
+      - '0'
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "kind": "youtube#searchListResponse",
+          "etag": "RFw-8MepDoBnaZkrtSHZmyScvxE",
+          "nextPageToken": "CAUQAA",
+          "regionCode": "US",
+          "pageInfo": {
+            "totalResults": 1000000,
+            "resultsPerPage": 5
+          },
+          "items": [
+            {
+              "kind": "youtube#searchResult",
+              "etag": "GuMy798ExA8dgBCV23ffPYPAoeI",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "q4ICEj4d2Ac"
+              },
+              "snippet": {
+                "publishedAt": "2017-10-19T21:00:02Z",
+                "channelId": "UCaxOQZrF5llUMp-JjesUz1A",
+                "title": "Lil Durk - India (Official Audio)",
+                "description": "Listen to the official audio of \"India\" by Lil Durk Subscribe to Lil Durk's official channel for exclusive music videos and behind the ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/q4ICEj4d2Ac/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/q4ICEj4d2Ac/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/q4ICEj4d2Ac/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Lil Durk",
+                "liveBroadcastContent": "none",
+                "publishTime": "2017-10-19T21:00:02Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "lwei3ZJHnyHOS7YOaZcGry4el_8",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "Kdw9-Wz2FOE"
+              },
+              "snippet": {
+                "publishedAt": "2023-08-07T15:30:05Z",
+                "channelId": "UCuFFtHWoLl5fauMMD5Ww2jA",
+                "title": "Why India&#39;s rice ban could cause a global food crisis | About That",
+                "description": "Shoppers around the world began panic buying after India banned the export of non-basmati white rice. About That producer ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/Kdw9-Wz2FOE/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/Kdw9-Wz2FOE/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/Kdw9-Wz2FOE/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "CBC News",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-08-07T15:30:05Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "_rVkFStLvqKZsHfFMiy-D-RtDvk",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "tANkwH_dmGY"
+              },
+              "snippet": {
+                "publishedAt": "2023-08-05T00:54:46Z",
+                "channelId": "UCIHdDJ0tjn_3j-FS7s_X1kQ",
+                "title": "&quot;They Need to Step it up!&quot; - Can India Replace China?",
+                "description": "For the first time, PBD Podcast hosts a Town Hall for a presidential candidate. Vivek Ramaswamy joins Patrick Bet-David to ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/tANkwH_dmGY/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/tANkwH_dmGY/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/tANkwH_dmGY/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Valuetainment",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-08-05T00:54:46Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "mUGE749gdWIoNt_gjiSxRXzMZFg",
+              "id": {
+                "kind": "youtube#video",
+                "videoId": "386iVwP-bAA"
+              },
+              "snippet": {
+                "publishedAt": "2023-03-10T17:55:25Z",
+                "channelId": "UCHASrbCS-niYRn-Y3WX38pA",
+                "title": "India Sucks! Don&#39;t Ever Come Here",
+                "description": "India sucks...sorry If you'd like to support my trip around the world and get uncensored videos, early releases, and exclusive ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://i.ytimg.com/vi/386iVwP-bAA/default.jpg",
+                    "width": 120,
+                    "height": 90
+                  },
+                  "medium": {
+                    "url": "https://i.ytimg.com/vi/386iVwP-bAA/mqdefault.jpg",
+                    "width": 320,
+                    "height": 180
+                  },
+                  "high": {
+                    "url": "https://i.ytimg.com/vi/386iVwP-bAA/hqdefault.jpg",
+                    "width": 480,
+                    "height": 360
+                  }
+                },
+                "channelTitle": "Small Brained American",
+                "liveBroadcastContent": "none",
+                "publishTime": "2023-03-10T17:55:25Z"
+              }
+            },
+            {
+              "kind": "youtube#searchResult",
+              "etag": "psTN3adFCjjxfwzy2VJJcsxZTpI",
+              "id": {
+                "kind": "youtube#channel",
+                "channelId": "UCpelPgePHrkrFYGgtFD8xsQ"
+              },
+              "snippet": {
+                "publishedAt": "2016-08-06T23:24:42Z",
+                "channelId": "UCpelPgePHrkrFYGgtFD8xsQ",
+                "title": "India In Details",
+                "description": "Hi, I am Karolina Goswami. A few years ago, I left a promising career to start a social media channel because I wanted to ...",
+                "thumbnails": {
+                  "default": {
+                    "url": "https://yt3.ggpht.com/ytc/AOPolaTEovb01Vs-o5Vb-oxA6nyOYNTPXCHCSeClJe_dyg=s88-c-k-c0xffffffff-no-rj-mo"
+                  },
+                  "medium": {
+                    "url": "https://yt3.ggpht.com/ytc/AOPolaTEovb01Vs-o5Vb-oxA6nyOYNTPXCHCSeClJe_dyg=s240-c-k-c0xffffffff-no-rj-mo"
+                  },
+                  "high": {
+                    "url": "https://yt3.ggpht.com/ytc/AOPolaTEovb01Vs-o5Vb-oxA6nyOYNTPXCHCSeClJe_dyg=s800-c-k-c0xffffffff-no-rj-mo"
+                  }
+                },
+                "channelTitle": "India In Details",
+                "liveBroadcastContent": "none",
+                "publishTime": "2016-08-06T23:24:42Z"
+              }
+            }
+          ]
+        }
+  recorded_at: Mon, 07 Aug 2023 21:48:42 GMT
+recorded_with: VCR 6.2.0
