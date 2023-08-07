@@ -1,7 +1,8 @@
-class CapitalFcade
+class CapitalFacade
   def get_capital(country)
     request = service.get_capital(country)
-    Capital.new(request)
+    capital = request[0][:capital][0]
+    Capital.new(capital)
   end
 
   def service
