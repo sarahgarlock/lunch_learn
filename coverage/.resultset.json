@@ -189,61 +189,52 @@
           1,
           1,
           1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/facades/video_facade.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          5,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/service/video_service.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
           1,
           null,
           null,
           null
         ]
       },
-      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/poros/video.rb": {
+      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/controllers/api/v1/learning_resources_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/sarahgarlock/turing/3mod/projects/lunch_learn/app/poros/learning_resource.rb": {
         "lines": [
           1,
           1,
           null,
           null,
+          null,
+          null,
+          null,
           1,
-          5,
-          5,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
       }
     },
-    "timestamp": 1691445382
+    "timestamp": 1691460298
   }
 }
