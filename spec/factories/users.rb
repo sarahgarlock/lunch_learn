@@ -5,6 +5,6 @@ FactoryBot.define do
     password_digest { Faker::Internet.password }
     # password_confirmation { Faker::Internet.password } ?
     # needs to be same as password_digest
-    # api_key { Faker::Internet.password } ?
+    api_key { Faker::Internet.password }
   end
 end
