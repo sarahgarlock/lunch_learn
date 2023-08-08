@@ -45,4 +45,28 @@ RSpec.describe "Sessions API" do
       
     end
   end
+
+  describe "sad path" do
+    it "returns an error if passwords don't match" do
+      user = create(:user, password: "password")
+
+      login = {
+        :email => user.email,
+        :password => "wrongpassword"
+      }
+
+      post "/api/v1/sessions", params: login
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(401)
+      expect(response).to have_http_status(:unauthorized)
+      expect(response.content_type).to eq("application/json; charset=utf-8")
+
+      login = JSON.parse(response.body, symbolize_names: true)
+
+      expect(login).to be_a(Hash)
+      expect(login).to have_key(:error)
+      expect(login[:error]).to eq("Invalid email or password")
+    end
+  end
 end

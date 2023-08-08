@@ -1,8 +1,4 @@
 class CountryService
-  def get_capital(country)
-    get_url("/v3.1/name/#{country}?fields=capital")
-  end
-
   def get_random_country
     response = get_url("/v3.1/all")
     country = response.sample
