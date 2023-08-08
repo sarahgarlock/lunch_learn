@@ -1,5 +1,5 @@
 class PhotoFacade
-  def search_photos(search)
+  def search_photo(search)
     request = service.get_photo(search)
     photos = request[:results].map do |data|
       Photo.new(data)
