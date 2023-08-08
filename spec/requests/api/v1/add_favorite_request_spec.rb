@@ -28,7 +28,7 @@ RSpec.describe "Add Favorite API", type: :request do
   end
 
   describe "sad path" do
-    it "returns invalid if api no user has that api key" do
+    it "returns invalid no user has that api key" do
       user = create(:user, password: "password", api_key: "jgn983hy48thw9begh98h4539h4")
 
       favorite = {
