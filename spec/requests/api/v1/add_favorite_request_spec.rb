@@ -22,8 +22,8 @@ RSpec.describe "Add Favorite API", type: :request do
       body = JSON.parse(response.body, symbolize_names: true)
 
       expect(body).to be_a(Hash)
-      expect(body).to have_key(:message)
-      expect(body[:message]).to eq("Successfully added Crab Fried Rice (Khaao Pad Bpu) to your favorites")
+      expect(body).to have_key(:success)
+      expect(body[:success]).to eq("Successfully added Crab Fried Rice (Khaao Pad Bpu) to your favorites")
     end
   end
 

@@ -4,16 +4,15 @@ RSpec.describe "User Login API" do
   describe "happy paths" do
     it "creates a user and returns an api key" do
       user_params = {
-        user: {
+    
           name: "Odell",
-          email: "goodboy@ruffruff.com",
+          email: "alex@gmail.com",
           password: "treats4lyf",
           password_confirmation: "treats4lyf"
-        }
       }
 
       post "/api/v1/users", params: user_params
-      
+
       expect(response).to be_successful
       expect(response.status).to eq(201)
       expect(response).to have_http_status(:created)
@@ -72,8 +71,8 @@ RSpec.describe "User Login API" do
 
       error_response = JSON.parse(response.body, symbolize_names: true)
 
-      # expect(error_response).to have_key(:error)
-
+      expect(error_response).to have_key(:error)
+      expect(error_response[:error]).to eq("Password confirmation doesn't match Password")
     end
   end
 end
