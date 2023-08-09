@@ -43,6 +43,7 @@ RSpec.describe "Recipes API", type: :request do
     end
 
     it "returns a list of recipes for a randomly selected country", :vcr do
+
       get '/api/v1/recipes'
       expect(response).to be_successful
       
