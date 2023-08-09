@@ -59,5 +59,30 @@ RSpec.describe "Learning Resources", type: :request do
       expect(blank_response).to have_key(:photo)
       expect(blank_response[:photo]).to be_nil
     end
+
+    it "returns a blank object if country doesn't exist", :vcr do
+      get "/api/v1/learning_resources?country=notacountry"
+
+      expect(response).to be_successful
+
+      blank_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(blank_response).to be_a(Hash)
+      expect(blank_response).to have_key(:id)
+      expect(blank_response[:id]).to be_nil
+
+      expect(blank_response).to have_key(:type)
+      expect(blank_response[:type]).to be_a(String)
+
+      expect(blank_response).to have_key(:country)
+      expect(blank_response[:country]).to be_a(String)
+      expect(blank_response[:country]).to eq("notacountry")
+
+      expect(blank_response).to have_key(:video)
+      # expect(blank_response[:video]).to be_nil
+
+      expect(blank_response).to have_key(:photo)
+      # expect(blank_response[:photo]).to be_nil
+    end
   end
 end
