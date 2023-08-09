@@ -4,9 +4,8 @@ RSpec.describe "User Login API" do
   describe "happy paths" do
     it "creates a user and returns an api key" do
       user_params = {
-    
           name: "Odell",
-          email: "alex@gmail.com",
+          email: "odell@gmail.com",
           password: "treats4lyf",
           password_confirmation: "treats4lyf"
       }
@@ -55,24 +54,51 @@ RSpec.describe "User Login API" do
   describe "sad paths" do
     it "returns an error if passwords don't match" do
       user_params = {
-        user: {
           name: "Odell",
           email: "goodboy@ruffruff.com",
           password: "treats4lyf",
           password_confirmation: "treats5lyfeee"
-        }
       }
 
       post "/api/v1/users", params: user_params
 
       expect(response).to_not be_successful
-      expect(response.status).to eq(422) # Unprocessable Entity
+      expect(response.status).to eq(422)
       expect(response).to have_http_status(:unprocessable_entity)
 
       error_response = JSON.parse(response.body, symbolize_names: true)
 
       expect(error_response).to have_key(:error)
-      expect(error_response[:error]).to eq("Password confirmation doesn't match Password")
+      expect(error_response[:error]).to eq("Passwords don't match or email is alreay in use")
+    end
+
+    it "returns an error if email is already taken" do
+      user1_params = {
+        name: "Odell",
+        email: "goodboy@ruffruff.com",
+        password: "treats4lyf",
+        password_confirmation: "treats5lyfeee"
+      }
+
+      post "/api/v1/users", params: user1_params
+
+      user2_params = {
+        name: "Jim",
+        email: "goodboy@ruffruff.com",
+        password: "password",
+        password_confirmation: "password"
+      }
+
+      post "/api/v1/users", params: user2_params
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(422)
+      expect(response).to have_http_status(:unprocessable_entity)
+
+      error_response = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error_response).to have_key(:error)
+      expect(error_response[:error]).to eq("Passwords don't match or email is alreay in use")
     end
   end
 end

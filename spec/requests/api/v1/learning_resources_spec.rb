@@ -51,10 +51,13 @@ RSpec.describe "Learning Resources", type: :request do
 
       expect(blank_response).to have_key(:country)
       expect(blank_response[:country]).to be_a(String)
+      expect(blank_response[:country]).to eq("")
 
       expect(blank_response).to have_key(:video)
       expect(blank_response[:video]).to be_nil
 
+      expect(blank_response).to have_key(:photo)
+      expect(blank_response[:photo]).to be_nil
     end
   end
 end
